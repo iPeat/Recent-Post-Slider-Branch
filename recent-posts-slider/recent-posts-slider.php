@@ -560,7 +560,7 @@ function create_excerpt( $post_content, $excerpt_length, $post_permalink, $excer
 	if( !empty($excerpt_words) ){	
 		if ( !empty($post_excerpt) ) {
 			$words = explode(' ', $post_excerpt, $excerpt_words + 1 );	
-			array_pop($words);
+			//array_pop($words);
 			array_push($words, ' <a href="'.$post_permalink.'">'.$more_link.'</a>');
 			$post_excerpt_rps = implode(' ', $words);
 			return $post_excerpt_rps;
